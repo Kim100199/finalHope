@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "956675700848",
+    "firebase_url": "https://opsc-bf81f.firebaseio.com",
+    "project_id": "opsc-bf81f",
+    "storage_bucket": "opsc-bf81f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956675700848:android:9367b0da712e55c0b7dcb5",
+        "android_client_info": {
+          "package_name": "viva.kimeshan.viva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956675700848-nbvke4qragj4cmmb1jsb8eidfg69e1bi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-sjsa49r3zOTP5hGb9uIhc7B6dT9I_KY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956675700848-nbvke4qragj4cmmb1jsb8eidfg69e1bi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

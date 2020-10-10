@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gg"
+    tools:context="viva.kimeshan.viva.registration">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="262dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="42dp"
+        android:text="REGISTRATION"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#f4f3f3"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="110dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:backgroundTint="#51e3d4"
+        android:textColor="#f4f3f3"
+        android:textColorHint="#f4f3f3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:backgroundTint="#51e3d4"
+        android:textColor="#f4f3f3"
+        android:textColorHint="#f4f3f3"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="110dp"
+        android:backgroundTint="#51e3d4"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:textColor="#f4f3f3"
+        android:textColorHint="#f4f3f3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="134dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="32dp"
+        android:background="#142850"
+        android:text="Register"
+        android:textColor="#dae1e7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/drivingRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="232dp"
+        android:backgroundTint="#142850"
+        android:buttonTint="#FFFFFF"
+        android:text="DRIVING"
+        android:textColor="#51e3d4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/walkingRadio" />
+
+    <RadioButton
+        android:id="@+id/cyclingRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#142850"
+        android:buttonTint="#FFFFFF"
+        android:text="CYCLING"
+        android:textColor="#51e3d4"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drivingRadio"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioButton
+        android:id="@+id/walkingRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="#142850"
+        android:buttonTint="#FFFFFF"
+        android:text="WALKING"
+        android:textColor="#51e3d4"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toTopOf="@+id/drivingRadio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="119dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cyclingRadio"
+        app:srcCompat="@drawable/cycling" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="75dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toEndOf="@+id/cyclingRadio"
+        app:srcCompat="@drawable/car" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="128dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/walkingRadio"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:srcCompat="@drawable/wali" />
+
+    <RadioButton
+        android:id="@+id/kilometers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="134dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="11dp"
+        android:buttonTint="#FFFFFF"
+        android:textColor="#51e3d4"
+        android:text="KILOMETERS"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MILES"
+        tools:text="KILOMETERS" />
+
+    <RadioButton
+        android:id="@+id/MILES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="26dp"
+        android:buttonTint="#FFFFFF"
+        android:checked="false"
+        android:textColor="#51e3d4"
+        android:text="MILES"
+        app:layout_constraintBottom_toTopOf="@+id/kilometers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:text="MILES" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
